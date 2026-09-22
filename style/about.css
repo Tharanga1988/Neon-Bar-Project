@@ -1,0 +1,47 @@
+body{
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff  ;
+}
+
+.headerclass{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    color: #511AB7;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+} 
+.listval
+{
+    max-width: 332px;
+    width: 100%;
+    max-height: 23px;
+    justify-content: space-between;
+}
+.about-box
+{
+    max-width: 1351px;
+    width: 100%;
+    max-height: 408px;
+}
+.footerval
+{
+    max-width: 1351px;
+    width: 100%;
+    max-height: 70px;
+    justify-content: center;
+    display: flex;
+}
+h1 span,
+h2 span
+{
+    color: #511AB7;
+}
