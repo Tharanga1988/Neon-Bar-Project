@@ -9,6 +9,11 @@
 body {
     color: #e0e0e0;
 }
+.about-body{
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff  ;
+}
 
 /*Navigation Bar*/
 header {
@@ -60,7 +65,18 @@ nav {
 
 /*Contact Page (Emil)*/
 
-/*about Page (Indushah)*/
+/*about Page (Indusha)*/
+.about-box
+{
+    max-width: 1351px;
+    width: 100%;
+    max-height: 408px;
+}
+h1 span,
+h2 span
+{
+    color: #511AB7;
+}
 
 /*Footer*/
 footer {
