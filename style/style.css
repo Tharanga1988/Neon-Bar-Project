@@ -9,12 +9,6 @@
 body {
     color: #e0e0e0;
 }
-.about-body{
-    background-color: #121212;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff  ;
-}
-
 /*Navigation Bar*/
 header {
     background-color: #0a0a0a;
@@ -76,6 +70,10 @@ h1 span,
 h2 span
 {
     color: #511AB7;
+}
+.about-body{
+    background-color: #121212;
+    color: #ffffff  ;
 }
 
 /*Footer*/
