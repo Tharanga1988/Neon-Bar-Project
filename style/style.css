@@ -70,20 +70,47 @@ nav {
 /*Contact Page (Emil)*/
 
 /*about Page (Indusha)*/
+.about-body main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 32px;
+    width :100%;
+    max-height: 344px;
+    margin: 16px;
+}
 .about-box
 {
     max-width: 1351px;
     width: 100%;
     max-height: 408px;
 }
+.about-box p {
+     max-width: 1135px;
+    width: 100%;
+    max-height: 52px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 h1 span,
 h2 span
 {
     color: #511AB7;
+    max-width: 1135px;
+    width: 100%;
+    max-height: 49px;
 }
 .about-body{
     background-color: #121212;
     color: #ffffff  ;
+    max-width: 1351px;
+    width: 100%;
+    max-height: 551px;
+}
+.product-list {
+    gap: 23px;
+    line-height: 25px;
+     
 }
 
 /*Footer*/
