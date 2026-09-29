@@ -7,6 +7,10 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #121212;
     color: #e0e0e0;
 }
 
@@ -60,11 +64,138 @@ nav {
 }
 
 /*Main Layout*/
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 0 32px;
+    width: 100%;
+}
 
+h1, h2 {
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.span-text {
+    color: #511ab7;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #511ab7;
+    color: #ffffff;
+    padding: 12.8px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #511ab9;
+    transform: translateY(-2px);
+}
 
 /*Index Page (Tharanga)*/
+.hero-section {
+    text-align: center;
+    padding: 96px 16px;
+    background: linear-gradient(#121212cc, #121212cc),url('../images/Index-page-photo.png') center/cover;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 32px;
+}
 
 /*Gallery Page (Khadija)*/
+main {
+    background-color: #111111;
+}
+.gallery-hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 40px;
+    text-align: center;
+}
+.gallery-subtitle {
+    color: #511ab7;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.gallery-hero h1 {
+    font-size: 56px;
+}
+.gallery-hero h1 span {
+    color: #511ab7;
+}
+.gallery-description {
+    color: #bdbdbd;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.gallery-moments {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 40px;
+    text-align: center;
+}
+.gallery-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.gallery-card {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+.gallery-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+.gallery-card-front,
+.gallery-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+.gallery-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-card:hover .gallery-card-inner {
+    transform: rotateY(180deg);
+}
+.gallery-card-back {
+    background-color: #1a1a1a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
 
 /*Contact Page (Emil)*/
 
