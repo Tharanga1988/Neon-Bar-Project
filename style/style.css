@@ -9,16 +9,15 @@
 body {
     color: #e0e0e0;
 }
-<<<<<<< HEAD
-=======
 
-.about-body{
+.about-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #121212;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff  ;
+    color: #ffffff;
 }
 
->>>>>>> 84cf2afa2005dbde5c0c9e51fdea17909ad27dbd
 /*Navigation Bar*/
 header {
     background-color: #0a0a0a;
@@ -71,46 +70,57 @@ nav {
 
 /*about Page (Indusha)*/
 .about-body main {
-    display: flex;
-    flex-direction: column;
+    flex: 1;
     max-width: 1200px;
-    padding: 32px;
-    width :100%;
-    max-height: 344px;
-    margin: 16px;
+    padding: 0 32px;
+    width: 100%;
+    margin: 32px auto;
 }
-.about-box
-{
+
+.about-box {
     max-width: 1351px;
     width: 100%;
     max-height: 408px;
+    transition: all 0.3s ease;
 }
+
+.about-box:hover {
+    cursor: default;
+    text-shadow:
+        -1px -1px 1px #464646,
+        1px 1px 2px #00000066;
+    transform: translateY(-2px);
+}
+
 .about-box p {
-     max-width: 1135px;
+    max-width: 1135px;
     width: 100%;
     max-height: 52px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 32px;
+    line-height: 1.6;
 }
+
 h1 span,
-h2 span
-{
+h2 span {
     color: #511AB7;
     max-width: 1135px;
     width: 100%;
     max-height: 49px;
 }
-.about-body{
+
+.about-body {
     background-color: #121212;
-    color: #ffffff  ;
+    color: #ffffff;
     max-width: 1351px;
     width: 100%;
     max-height: 551px;
 }
+
 .product-list {
+    list-style-position: inside;
     gap: 23px;
-    line-height: 25px;
-     
+    line-height: 1.8;
 }
 
 /*Footer*/
