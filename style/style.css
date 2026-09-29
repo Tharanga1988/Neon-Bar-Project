@@ -106,6 +106,88 @@ h1, h2 {
 }
 
 /*Gallery Page (Khadija)*/
+main {
+    background-color: #111111;
+}
+.gallery-hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 40px;
+    text-align: center;
+}
+.gallery-subtitle {
+    color: #511ab7;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.gallery-hero h1 {
+    font-size: 56px;
+}
+.gallery-hero h1 span {
+    color: #511ab7;
+}
+.gallery-description {
+    color: #bdbdbd;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.gallery-moments {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 40px;
+    text-align: center;
+}
+.gallery-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.gallery-card {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+.gallery-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+.gallery-card-front,
+.gallery-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+.gallery-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-card:hover .gallery-card-inner {
+    transform: rotateY(180deg);
+}
+.gallery-card-back {
+    background-color: #1a1a1a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
 
 /*Contact Page (Emil)*/
 
