@@ -72,7 +72,8 @@ main {
     width: 100%;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #ffffff;
     margin-bottom: 16px;
 }
@@ -103,7 +104,7 @@ h1, h2 {
 .hero-section {
     text-align: center;
     padding: 96px 16px;
-    background: linear-gradient(#121212cc, #121212cc),url('../images/Index-page-photo.png') center/cover;
+    background: linear-gradient(#121212cc, #121212cc), url('../images/Index-page-photo.png') center/cover;
     border-radius: 10px;
     border: 1px solid #333;
 }
@@ -117,12 +118,14 @@ h1, h2 {
 main {
     background-color: #111111;
 }
+
 .gallery-hero {
     max-width: 1200px;
     margin: auto;
     padding: 40px 40px;
     text-align: center;
 }
+
 .gallery-subtitle {
     color: #511ab7;
     font-size: 14px;
@@ -130,12 +133,15 @@ main {
     letter-spacing: 3px;
     margin-bottom: 15px;
 }
+
 .gallery-hero h1 {
     font-size: 56px;
 }
+
 .gallery-hero h1 span {
     color: #511ab7;
 }
+
 .gallery-description {
     color: #bdbdbd;
     font-size: 18px;
@@ -143,12 +149,14 @@ main {
     max-width: 700px;
     margin: 0 auto;
 }
+
 .gallery-moments {
     max-width: 1200px;
     margin: auto;
     padding: 10px 40px;
     text-align: center;
 }
+
 .gallery-cards {
     display: flex;
     justify-content: center;
@@ -156,11 +164,13 @@ main {
     margin-top: 40px;
     flex-wrap: wrap;
 }
+
 .gallery-card {
     width: 350px;
     height: 250px;
     margin-bottom: 20px;
 }
+
 .gallery-card-inner {
     width: 100%;
     height: 100%;
@@ -168,6 +178,7 @@ main {
     transition: transform 0.6s ease;
     transform-style: preserve-3d;
 }
+
 .gallery-card-front,
 .gallery-card-back {
     width: 100%;
@@ -177,14 +188,17 @@ main {
     left: 0;
     backface-visibility: hidden;
 }
+
 .gallery-card-front img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .gallery-card:hover .gallery-card-inner {
     transform: rotateY(180deg);
 }
+
 .gallery-card-back {
     background-color: #1a1a1a;
     transform: rotateY(180deg);
@@ -198,6 +212,144 @@ main {
 }
 
 /*Contact Page (Emil)*/
+.main-contact {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.contact-form fieldset {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 32px 28px;
+    background: #140f27d9;
+    border-radius: 12px;
+    border: 2px solid #511ab766;
+    box-shadow: 0 0 20px #511ab733;
+    color: #ffffff;
+}
+
+.contact-form legend {
+    color: #511AB7;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    text-shadow: 0 0 10px #511ab780;
+}
+
+/* Grid Layout for Form Fields */
+.form-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    color: #CCCCCC;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Full Width Fields (Select, Textarea, Checkbox, Buttons) */
+.full-width {
+    grid-column: span 2;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+/* Base Input, Select, Textarea Styling */
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: #0d091a;
+    border: 1px solid #3d2275;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #666666;
+}
+
+/* Focus & Validation*/
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #511ab7;
+    box-shadow: 0 0 8px #511ab7aa;
+}
+
+/* CSS Native*/
+.form-group input:focus:invalid,
+.form-group textarea:focus:invalid {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 8px #ff4d4d88;
+}
+
+.form-group input:focus:valid,
+.form-group textarea:focus:valid {
+    border-color: #2ec4b6;
+    box-shadow: 0 0 8px #2ec4b688;
+}
+
+/* Custom Checkbox Styling */
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #511ab7;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Actions Section */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+/* Responsive view for mobile devices */
+@media (max-width: 600px) {
+    .form-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+}
 
 /*about Page (Indusha)*/
 .about-body main {
